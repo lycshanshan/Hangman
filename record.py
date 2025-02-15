@@ -6,7 +6,7 @@ from os import path, remove, system
 from uuid import getnode
 
 UID = str(getnode()) # 获取设备的唯一标识符
-ADMIN_UID = '9408410170268' # 管理员UID
+ADMIN_UID = '________________' # 管理员UID
 score = 0
 
 logging.basicConfig(filename='Game logs.log', 
