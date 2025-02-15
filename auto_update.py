@@ -24,10 +24,7 @@ ftp_server = '106.14.135.243'
 ftp_user = 'hangman_data'
 ftp_password = 'e2B78A2FKcX38xWR'
 ftp_version_path = 'latest_version.txt'
-# local_version_path = 'latest_version.txt'
-# current_version_path = 'version.txt'
 ftp_pack_path = 'Hangman_packed.zip'
-# local_pack_path = 'Hangman_packed.zip'
 
 local_version_path = f'{folder_path}\\latest_version.txt'
 current_version_path = f'{folder_path}\\version.txt'
@@ -142,9 +139,6 @@ def update_game():
     unzip_file(local_pack_path, folder_path)
     remove(local_pack_path)
     print('Successfully download latest Hangman Game.')
-
-# unzip_file(local_pack_path, folder_path)
-# delete_except(folder_path, self_name)
 
 update_game()
 wait('Press any key to exit...')
